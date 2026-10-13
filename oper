@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class SumaResta {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Pedir los dos números al usuario
+        System.out.print("Ingresa el primer número: ");
+        double numero1 = scanner.nextDouble();
+
+        System.out.print("Ingresa el segundo número: ");
+        double numero2 = scanner.nextDouble();
+
+        // Realizar las operaciones
+        double suma = numero1 + numero2;
+        double resta = numero1 - numero2;
+
+        // Mostrar los resultados
+        System.out.println("\n--- Resultados ---");
+        System.out.println("La suma es: " + suma);
+        System.out.println("La resta es: " + resta);
+
+        scanner.close();
+    }
+}
